@@ -1,0 +1,868 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #002b11;
+    margin: 0;
+    padding: 0;
+}
+
+.spacing {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding-left:20px;
+    padding-right:20px; */
+}
+.d-none{
+    display: none;
+}
+.navbar {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar .logo {
+    width: 188px;
+    cursor: pointer;
+}
+
+.navbar__search {
+    border: 1px solid #768a79;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.navbar__search input {
+    border: none;
+
+}
+
+.navbar__search i {
+    color: #768a79;
+}
+
+.navbar__search input:focus,
+.whereto-search input:focus {
+    outline: none;
+}
+
+.navbar__search:focus-within{
+    border: 1px solid #1a4029;
+}
+
+.navbar__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: #002b11;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.planwithai {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.navbar__links a:hover {
+    background-color: #e5e5e5;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.vline {
+    background-color: #ccc;
+    height: 22px;
+    display: inline-block;
+    width: 1px;
+    vertical-align: bottom;
+    margin: 0 8px;
+}
+
+a.signin {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    border:1px solid #002b11;
+}
+
+a.signin:hover {
+    background-color: #00ab42;
+    color:#fff;
+    border:none;
+    border:1px solid #00ab42;
+}
+
+
+.whereto a:hover,.whereto a.active {
+    text-decoration: underline;
+    text-decoration-color: #002b11;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.whereto {
+    text-align: center;
+    background-color: #f7f7f7cc;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.whereto h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.whereto a {
+    text-decoration: none;
+    color: #002b11;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+}
+
+.whereto-search {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding:40px 20px;
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.location-search,.filter-search,
+.whereto-search__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.location-search{
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+.location-search:focus-within {
+    border: 1px solid #34e0a1;
+}
+.filter-search{
+    padding:20px;
+}
+
+.whereto-search input {
+    border: none;
+    width: 65%;
+    font-size: 16px;
+    background-color: #fff;
+}
+.whereto-search__actions .btn{
+background-color: #002b11;
+color:#fff;
+ border: 1px solid #002b11;
+    border-radius: 10px;
+    padding:10px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.whereto-search__actions .btn1 {
+    background-color: #fff;
+    border: 1px solid #002b11;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.whereto-search__actions .btn2 {
+    background-color: #fff;
+    color:#000;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border:1px solid #707070;
+}
+
+.whereto-search__actions .btn1:hover {
+    background-color: #e5e5e5;
+}
+
+.whereto-search__actions .btn2:hover {
+    background-color: #002b11;
+    color:#fff;
+}
+.whereto-search label{
+    font-size: 12px;
+}
+.whereto-search select{
+    border-color: #ccc;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.whereto-search select:focus{
+    outline: none;
+    border-color: #34e0a1;
+    box-shadow: 0 0 5px rgba(52,224,161,.5);
+}
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00eb5b;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.banner .vline {
+    width: 0.5px;
+    background-color: #282727;
+    height: -webkit-fill-available;
+    margin: 0 30px;
+}
+
+.banner__img {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.banner__img img {
+    border-radius: 20px;
+}
+
+.banner__content {
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner__content h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.banner__content p {
+    margin-bottom: 40px;
+}
+
+.banner__content .btn3,
+.bestone-content .btn3 {
+    background-color: #002b11;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.interest h2, 
+.interest p,
+.special h2,
+.special p,.amazing h2, .amazing p,.inspiring  h2, .inspiring p {
+    margin: 0;
+}
+
+.interest__places,
+.amazingplaces,
+.inspiringplaces,
+.hotel__places {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest__card,
+.amazingplaces__card,
+.inspiringplaces__card,
+.hotel__card {
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding-top: 20px;
+    position: relative;
+}
+
+.interest__card img,
+.hotel__card img {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.desc{
+    font-size: 12px;
+}
+.interest__card .card_title,
+.hotel__card .card_title {
+    position: absolute;
+    background: linear-gradient(to top, #000, transparent);
+    width: -webkit-fill-available;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 5px;
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    color: #fff;
+}
+
+.card_title h3 {
+    margin: 0;
+}
+
+.amazingplaces__card img,
+.inspiringplaces__card img {
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.amazingplaces__card p,
+.inspiringplaces__card p {
+    margin: 10px 0px;
+}
+
+.amazingplaces__card .place {
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.amazingplaces__card .pname {
+    font-weight: 500;
+}
+
+.amazingplaces__card .rating,.rating {
+    font-size: 12px;
+}
+.special-hotels .rating span{
+    color:goldenrod;
+}
+
+.amazingplaces__card .wishlist,
+.inspiringplaces__card .wishlist {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    color: #002b11;
+    text-decoration: none;
+}
+
+.banner2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.banner2 .banner__content h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.banner2 .banner__content .btn3 {
+    margin-top: 10px;
+}
+
+.inspiring {
+    background-color: #f7f7f7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.inspiringplaces__card p {
+    text-align: center;
+}
+
+.hotels-places {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.hotels-places a {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #002b11;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    width: 100px;
+    text-align: center;
+}
+
+.hotels-places a.active,
+.hotels-places a:hover {
+    background-color: #002b11;
+    color: #fff;
+}
+
+.bestone {
+    background-color: #000;
+}
+
+.bestone .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.bestone-content,
+.bestone-img {
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+.bestone-content {
+    color: #fff;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.bestone-content .btn3 {
+    background-color: #fff;
+    color: #000;
+}
+
+.bestone-content span.award {
+    background-color: #f2b560;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left !important;
+}
+
+.hotel__card .card_title {
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+footer {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.footer__explore,
+.footer__types,
+.footer__support {
+    flex-basis: 20%;
+    flex-grow: 1;
+}
+
+.footer__about {
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.footer__about p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer__about .follow-us a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer__about .follow-us a:hover,
+.footer a:hover {
+    color: #00eb5b;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.footer h2,
+.footer h3 {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer__copyright h2,
+.footer__copyright p {
+    color: #fff;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 40px;
+}
+
+.footer__copyright {
+    font-size: 12px;
+}
+
+.menubar {
+    display: none;
+}
+
+
+/* /Animations */
+.wishlist i{
+    transition: 0.5s;
+}
+
+.wishlist:hover i{
+    color: red;
+    transform: scale(1.5);
+}
+.interest__card,
+.amazingplaces__card,
+.inspiringplaces__card,
+.hotel__card, .banner img,.banner2 img, .bestone img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.interest__card:hover,
+.amazingplaces__card:hover,
+.inspiringplaces__card:hover,
+.hotel__card:hover,.banner img:hover,.banner2 img:hover, .bestone img:hover{
+    transform: scale(1.03);
+    object-fit: cover;
+}
+
+.planwithai{
+     animation: blink 3s infinite;
+}
+.planwithai i{ 
+    animation: blinkicon 0.9s infinite;
+}
+@keyframes blinkicon{
+    0%,100%{
+        opacity:1;
+        color:#002b11;
+    }
+    50%{
+        opacity:0.5;
+        color:#00eb5b;
+    }
+    80%{
+        opacity:0.9;
+        color:#00ab42;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 0;
+    }
+
+    header.container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar__search,
+    .navbar__links a {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .navbar {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .whereto h1 {
+        font-size: 30px;
+    }
+
+    .whereto-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .whereto a {
+        font-size: 15px;
+        padding: 0;
+    }
+    .whereto-search{
+            padding: 40px 0px;
+            width: 90%;
+    }
+    .whereto-search__part {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .whereto-search input {
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 80%;
+    }
+.location-search{
+    flex-wrap: nowrap;
+    gap:3px;
+    padding: 5px 5px;
+    margin: 5px 10px;
+}
+.whereto-search__actions .btn2{
+    display: none;
+}
+    .filter-search{
+        flex-direction: column;
+        align-items: baseline;
+        padding: 12px;
+    }
+    .whereto-search select{
+        width:100%;
+    }
+
+    .banner__img {
+        flex-basis: 100%;
+    }
+
+    .banner .vline {
+        width: 100%;
+        background-color: #282727;
+        height: 1px;
+        margin-top: 40px;
+    }
+
+    .banner__content {
+        padding: 15px;
+    }
+
+    .banner__content h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .banner__content p {
+        margin-bottom: 20px;
+    }
+
+    .interest h2,
+    .interest p,
+    .special h2,
+    .special p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .card_title h3{
+        font-size: 16px;
+    }
+    .interest__card,
+    .amazingplaces__card,
+    .inspiringplaces__card,
+    .hotel__card {
+        flex-basis: 45%;
+    }
+    .amazingplaces__card img, .inspiringplaces__card img,.interest__card img, .hotel__card img{
+    height: 300px;
+    object-fit: cover;
+    }
+    .desc{
+        display: none;
+    }
+    .bestone .container {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bestone-content span.award {
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .banner2 {
+        margin-top: 30px;
+    }
+
+    .banner2 .banner__content h1 {
+        font-size: 25px;
+    }
+
+    .hotels-places {
+        gap: 10px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .hotels-places::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hotels-places a {
+        margin-top: 10px;
+        min-width: 120px;
+    }
+
+    .footer__about {
+        flex-basis: 100%;
+    }
+
+    .footer__explore,
+    .footer__types,
+    .footer__support {
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px),
+screen and (min-width: 768px) and (max-width: 834px) {
+
+    .navbar
+     {
+        justify-content: space-evenly;
+        gap: 15px;
+        padding:30px;
+    }
+
+    .navbar__search {
+        width: 80%;
+        margin-top:10px;
+    }
+    .navbar__links{
+        padding-top:10px;
+    }
+    .whereto-search input {
+        width: 50%;
+    }
+    .filter-search{
+        gap:30px;
+    }
+
+    .banner .vline {
+        width: 100%;
+        background-color: #282727;
+        height: 1px;
+        margin-top: 40px;
+    }
+    .interest__card, .amazingplaces__card, .inspiringplaces__card, .hotel__card{
+        flex-basis: 40%;
+    }
+}
