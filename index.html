@@ -33,14 +33,14 @@
                     <a href="#" class="signin">Sign in</a>
                    
                 </div>
-                 <div class="menubar">
+                 <div class="menubar" id="menubar">
                         <i class="fa-solid fa-bars"></i>
                     </div>
             </div>
              <!--Mobile nav bar-->
-        <div class="sidenav  bg-white w-[50%] h-[100vh] fixed z-20 top-0 right-[-50%] p-5 transition-all duration-1000" id="sidenav">
-            <div class="close-nav p-2 text-right">
-                <p id="close" class="cursor-pointer">X</p>
+            <div class="sidenav" id="sidenav">
+            <div class="close-nav">
+                <p id="close" >X</p>
             </div>
             <div class="navbar__links">
                     <a href="#" class="planwithai">
@@ -420,7 +420,25 @@
             </div>
         </footer>
     </main>
+<script>
+    var sidenav=document.getElementById('sidenav');
+    var menu=document.getElementById('menubar');
+    var close=document.getElementById('close');
+    var search=document.getElementsByClassName('navbar__search');
+    var links=document.querySelector('.sidenav .navbar__links a');
+    menu.addEventListener('click',function(){
+        sidenav.style.right=0;
+        search.style.display="block";
+        links.style.display="block";
 
+    })
+    close.addEventListener('click',function(){
+        sidenav.style.right="-50%";
+        search.style.display="none";
+        links.style.display="none";
+
+    })
+</script>
 </body>
 
 </html>

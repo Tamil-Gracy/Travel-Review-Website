@@ -663,6 +663,39 @@ footer hr {
     }
 }
 
+.sidenav{
+    background-color: white;
+    width:50%;
+    height:100vh;
+    position: fixed;
+    z-index:20;
+    top:0;
+    right:-50%;
+    padding:5px;
+    transition: all;
+    transition-duration: 1000ms;
+    color:#000;
+}
+.sidenav .navbar__links{
+    display: flex;
+    flex-direction: column;
+}
+.sidenav .close-nav{
+    padding:2px;
+    text-align: right;
+}
+.sidenav #close{
+    cursor: pointer;
+}
+.sidenav .navbar__links a{
+    color:#000;
+    display: block;
+}
+
+
+
+
+
 @media screen and (max-width:768px) {
     .container {
         padding: 0;
@@ -830,6 +863,8 @@ footer hr {
     .footer__support {
         flex-basis: 33%;
     }
+
+   
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px),
